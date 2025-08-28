@@ -21,9 +21,15 @@ This is a blog application created with Django.
 
 - Create an application: `python manage.py startapp blog`
 
+- Ente in the shell: `python manage.py shell`
+
 ## Annotations
 
 ### Chapter 1
+
+page 18
+    - The indexes get to the database more efficient queries
+    - Whithout indexes, the database will have to scan all the rows to find the data
 
 Page 14
     - Init the application Blog creating a POST model
