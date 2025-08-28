@@ -13,7 +13,7 @@ class Post(models.Model):
     slug = models.SlugField(max_length=250)
     # Add many-to-one relationship
     # One author can write many posts
-    author = models.foreignKey(
+    author = models.ForeignKey(
         settings.AUTH_USER_MODEL,
         on_delete=models.CASCADE,
         related_name='blog_posts'
@@ -37,7 +37,7 @@ class Post(models.Model):
         # Create an index for the publish field
         # This will improve the performance of the query
         indexes = [
-            models.Index(fields=['-publish'])
+            models.Index(fields=['-publish']),
         ]
 
     # Return the title of the blog post as a string
