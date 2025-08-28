@@ -24,10 +24,14 @@ This is a blog application created with Django.
 - Ente in the shell: `python manage.py shell`
 
 - Initial migration for Post model: `python manage.py makemigrations blog`
+- See the SQL for the migration: `python manage.py sqlmigrate blog 0001`
 
 ## Annotations
 
 ### Chapter 1
+
+Page 24
+    - The migration initial for the Post model, contains the SQL for create the table in the databas and the index for the publish field
 
 Page 23
     - The on_delete parameter is used to delete the related objects when the parent object is deleted
