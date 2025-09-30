@@ -21,17 +21,35 @@ This is a blog application created with Django.
 
 - Create an application: `python manage.py startapp blog`
 
-- Ente in the shell: `python manage.py shell`
+- Enter in the shell: `python manage.py shell`
 
 - Initial migration for Post model: `python manage.py makemigrations blog`
 - See the SQL for the migration: `python manage.py sqlmigrate blog 0001`
+
+- Create a superuser: `python manage.py createsuperuser`
+- kleciannymelo
+- Senha: my cell phone of Vivo
+- Email: kleciannymelo@gmail.com
+
+- Django administration site: http://127.0.0.1:8000/admin/
 
 ## Annotations
 
 ### Chapter 1
 
+page 30
+    - Define configurations for customizing how models are displayed on the admin site
+    - It is possible define filters, search fields, prepopulated fields, raw id fields, date hierarchy and ordering
+
+Page 28
+    - It is possible add a model in the Django admin site, when you register the model in the admin.py file
+    - After this registration, the django admin site will show a new section for this model and will be possible make the CRUD of the objects for this model
+
+Page 25
+    - Each new model file will have a new migration file because with this, Django will be able to track the changes in the models and apply them to the database
+
 Page 24
-    - The migration initial for the Post model, contains the SQL for create the table in the databas and the index for the publish field
+    - The migration initial for the Post model, contains the SQL for create the table in the database and the index for the publish field
 
 Page 23
     - The on_delete parameter is used to delete the related objects when the parent object is deleted
