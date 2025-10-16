@@ -37,6 +37,9 @@ This is a blog application created with Django.
 
 ### Chapter 1
 
+34
+    - Python shell: commands for get or create posts and users
+
 32
     - Facet filters are counters of show how many objects exist for each filter option in the admin site
 
