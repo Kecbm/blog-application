@@ -37,31 +37,34 @@ This is a blog application created with Django.
 
 ### Chapter 1
 
-page 30
+32
+    - Facet filters are counters of show how many objects exist for each filter option in the admin site
+
+30
     - Define configurations for customizing how models are displayed on the admin site
     - It is possible define filters, search fields, prepopulated fields, raw id fields, date hierarchy and ordering
 
-Page 28
+28
     - It is possible add a model in the Django admin site, when you register the model in the admin.py file
     - After this registration, the django admin site will show a new section for this model and will be possible make the CRUD of the objects for this model
 
-Page 25
+25
     - Each new model file will have a new migration file because with this, Django will be able to track the changes in the models and apply them to the database
 
-Page 24
+24
     - The migration initial for the Post model, contains the SQL for create the table in the database and the index for the publish field
 
-Page 23
+23
     - The on_delete parameter is used to delete the related objects when the parent object is deleted
     - The related_name parameter is used to access the related objects from the parent object
     - After create a model, is necessary to create the corresponding database table
     - Django have a migration system to get a changes in the models and apply them to the database
 
-page 18
+18
     - The indexes get to the database more efficient queries
     - Whithout indexes, the database will have to scan all the rows to find the data
 
-Page 14
+14
     - Init the application Blog creating a POST model
     - A model when conect in a database, will be create a db table, with the same fields
     
