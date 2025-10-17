@@ -46,8 +46,10 @@ This is a blog application created with Django.
 ### Chapter 1
 
 35
-    - For update a object, is necessary use the save() method before the changes
+    - Update a object, is necessary use the save() method before the changes
     - Ex.: `post.title = 'A totally different title'`, `post.save()`
+    - Get all objects: `all_posts = Post.objects.all()`
+    - See the response: `all_posts`
 
 34
     - Python shell: commands for get or create posts and users
