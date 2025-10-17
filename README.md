@@ -39,6 +39,8 @@ This is a blog application created with Django.
 
 34
     - Python shell: commands for get or create posts and users
+    - `Post(key='value')` create a new post in memory; `Post.objects.create(key='value')` create a new post in the database
+    - `get_or_create(key='value')` get the object if it exists, or create a new one if it doesn't
 
 32
     - Facet filters are counters of show how many objects exist for each filter option in the admin site
