@@ -10,32 +10,44 @@ This is a blog application created with Django.
 
 ## Commands
 
+
 - Create virtual environment: `python -m venv venv`
 - Activate virtual environment: `source venv/bin/activate`
 - Deactivate virtual environment: `deactivate`
 - Install requirements: `pip install -r requiriments.txt`
 - Apply migrations: `python manage.py migrate`
 
+
 - Start the server: `python manage.py runserver`
     - The server it willbe running in the url: http://127.0.0.1:8000/
 
+
 - Create an application: `python manage.py startapp blog`
+
 
 - Enter in the shell: `python manage.py shell`
 
+
 - Initial migration for Post model: `python manage.py makemigrations blog`
 - See the SQL for the migration: `python manage.py sqlmigrate blog 0001`
+
 
 - Create a superuser: `python manage.py createsuperuser`
 - kleciannymelo
 - Senha: my cell phone of Vivo
 - Email: kleciannymelo@gmail.com
 
+
 - Django administration site: http://127.0.0.1:8000/admin/
+
 
 ## Annotations
 
 ### Chapter 1
+
+35
+    - For update a object, is necessary use the save() method before the changes
+    - Ex.: `post.title = 'A totally different title'`, `post.save()`
 
 34
     - Python shell: commands for get or create posts and users
