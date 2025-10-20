@@ -45,8 +45,12 @@ This is a blog application created with Django.
 
 ### Chapter 1
 
+39
+    - Limiting QuerySets: for see 5 first posts: `Post.objects.all()[:5]`
+
 38
     - Excluding objects: `Post.objects.filter(publish__year=2025).exclude(title__startswith='carlo')`
+    - Ordering objects: `Post.objects.order_by('publish')`
 
 36
     - See the SQL Query for the command: `all_posts = Post.objects.all()` > `print(all_posts.query)`
