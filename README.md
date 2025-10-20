@@ -47,6 +47,7 @@ This is a blog application created with Django.
 
 36
     - See the SQL Query for the command: `all_posts = Post.objects.all()` > `print(all_posts.query)`
+    - Field lookups for filter objects. Ex.: `Post.objects.filter({id__exact=1}, {title__contains='example'}, {publish__date='2025-08-28'})`
 
 35
     - Update a object, is necessary use the save() method before the changes
