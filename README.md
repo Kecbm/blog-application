@@ -47,6 +47,8 @@ This is a blog application created with Django.
 
 39
     - Limiting QuerySets: for see 5 first posts: `Post.objects.all()[:5]`
+    - Counting objects: `Post.objects.count()`
+    - Check if exists objects: `Post.objects.filter(title__startswith='carlo').exists()`
 
 38
     - Excluding objects: `Post.objects.filter(publish__year=2025).exclude(title__startswith='carlo')`
