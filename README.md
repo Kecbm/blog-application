@@ -45,6 +45,9 @@ This is a blog application created with Django.
 
 ### Chapter 1
 
+38
+    - Excluding objects: `Post.objects.filter(publish__year=2025).exclude(title__startswith='carlo')`
+
 36
     - See the SQL Query for the command: `all_posts = Post.objects.all()` > `print(all_posts.query)`
     - Field lookups for filter objects. Ex.: `Post.objects.filter({id__exact=1}, {title__contains='example'}, {publish__date='2025-08-28'})`
