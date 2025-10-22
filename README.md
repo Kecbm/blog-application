@@ -45,6 +45,9 @@ This is a blog application created with Django.
 
 ### Chapter 1
 
+41
+    - Creating model managers: whithout a custom model manager: `Post.objects.my_manager()`; with a custom model manager: `Post.my_manager.all()`
+
 40
     - Queries with OR statments, using the Q object
     - Ex.: `from django.db.models import Q` > `Post.objects.filter(Q(title__startswith='carlo') | Q(title__startswith='example'))`
