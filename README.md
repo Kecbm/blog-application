@@ -45,6 +45,10 @@ This is a blog application created with Django.
 
 ### Chapter 1
 
+40
+    - Queries with OR statments, using the Q object
+    - Ex.: `from django.db.models import Q` > `Post.objects.filter(Q(title__startswith='carlo') | Q(title__startswith='example'))`
+
 39
     - Limiting QuerySets: for see 5 first posts: `Post.objects.all()[:5]`
     - Counting objects: `Post.objects.count()`
