@@ -45,6 +45,9 @@ This is a blog application created with Django.
 
 ### Chapter 1
 
+42
+    - Django view is a Python function that receives a web request and returns a web response
+
 41
     - Creating model managers: whithout a custom model manager: `Post.objects.my_manager()`; with a custom model manager: `Post.my_manager.all()`
 
