@@ -47,6 +47,7 @@ This is a blog application created with Django.
 
 44
     - `get_object_or_404`: If the object exists, it will be returned, if not, a 404 error will be returned
+    - url patterns: map url to views
 
 43
     - View for get one post is in the `blog/views.py` file > `post_detail`
