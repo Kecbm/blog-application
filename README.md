@@ -45,10 +45,15 @@ This is a blog application created with Django.
 
 ### Chapter 1
 
+44
+    - `get_object_or_404`: If the object exists, it will be returned, if not, a 404 error will be returned
+
+43
+    - View for get one post is in the `blog/views.py` file > `post_detail`
+
 42
     - Django view is a Python function that receives a web request and returns a web response
     - First view to list the posts is in the `blog/views.py` file > `post_list`
-    - View for get one post is in the `blog/views.py` file > `post_detail`
 
 41
     - Creating model managers: whithout a custom model manager: `Post.objects.my_manager()`; with a custom model manager: `Post.my_manager.all()`
