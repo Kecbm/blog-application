@@ -47,6 +47,7 @@ This is a blog application created with Django.
 
 46
     - Templates for a view decides how data will be displayed
+    - Django have a template language
 
 44
     - `get_object_or_404`: If the object exists, it will be returned, if not, a 404 error will be returned
