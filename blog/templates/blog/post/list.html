@@ -1,8 +1,8 @@
 {% extends "blog/base.html" %}
 
-{% blocktitle %}My blog{% endblock %}
+{% block title %}My blog{% endblock %}
 
-{% blockcontent %}
+{% block content %}
     <h1>My blog</h1>
     {% for post in posts %}
         <h2>
@@ -11,7 +11,7 @@
             </a>
         </h2>
         <p class="date">
-            Published {{ post.published }} by {{ post.author }}
+            Published {{ post.publish }} by {{ post.author }}
         </p>
         {{ post.body|truncatewords:30|linebreaks }}
     {% endfor %}
