@@ -131,7 +131,6 @@ dmypy.json
 # Django specific additions
 media/
 staticfiles/
-static/
 .DS_Store
 *.pyc
 *.pyo
