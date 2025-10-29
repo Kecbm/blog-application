@@ -45,6 +45,9 @@ This is a blog application created with Django.
 
 ### Chapter 1
 
+50
+    - The request/response cycle: HttpRequest ➜ URL patterns ➜ Views ➜ Database + Template ➜ HttpResponse ➜ Browser
+
 46
     - Templates for a view decides how data will be displayed
     - Django have a template language
