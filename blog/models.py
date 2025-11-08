@@ -17,7 +17,11 @@ class Post(models.Model):
 
 
     title = models.CharField(max_length=250)
-    slug = models.SlugField(max_length=250)
+    slug = models.SlugField(
+        max_length=250,
+        # The slug must be unique for each post
+        unique_for_date='publish'
+    )
     # Add many-to-one relationship
     # One author can write many posts
     author = models.ForeignKey(
