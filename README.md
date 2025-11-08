@@ -43,6 +43,12 @@ This is a blog application created with Django.
 
 ## Annotations
 
+
+### Chapter 2
+
+56
+    - Canonical URLs: are the official or standard URL to access a specific object of your model
+
 ### Chapter 1
 
 50
