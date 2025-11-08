@@ -6,5 +6,14 @@ app_name = 'blog'
 urlpatterns = [
     # post views
     path('', views.post_list, name='post_list'),
-    path('<int:id>/', views.post_detail, name='post_detail'),
+    
+    # Old url for post:
+    # path('<int:id>/', views.post_detail, name='post_detail'),
+
+    # New url for post with SEO-friendly URLs:
+    path(
+        '<int:year>/<int:month>/<int:day>/<slug:post>',
+        views.post_detail,
+        name='post_detail'
+    )
 ]
