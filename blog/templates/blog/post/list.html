@@ -6,7 +6,9 @@
     <h1>My blog</h1>
     {% for post in posts %}
         <h2>
-            <a href="{% url 'blog:post_detail' post.id %}">
+            {# old url: <a href="{% url 'blog:post_detail' post.id %}"> #}
+            {# new url using canonical urls: #}
+            <a href="{{ post.get_absolute_irl }}">
                 {{ post.title }}
             </a>
         </h2>
