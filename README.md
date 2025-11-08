@@ -46,6 +46,10 @@ This is a blog application created with Django.
 
 ### Chapter 2
 
+62
+    - Pagination: is the process of dividing a list of objects into a number of pages
+    - Django have the Paginator class to implement pagination
+
 59
     - SEO-friendly URLs for posts: modify the basic urls to use the slug field and the publish field (`/blog/1/` > `blog/2024/1/1/post-slug/`) 
 
