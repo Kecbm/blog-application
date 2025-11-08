@@ -8,7 +8,7 @@
         <h2>
             {# old url: <a href="{% url 'blog:post_detail' post.id %}"> #}
             {# new url using canonical urls: #}
-            <a href="{{ post.get_absolute_irl }}">
+            <a href="{{ post.get_absolute_url }}">
                 {{ post.title }}
             </a>
         </h2>
