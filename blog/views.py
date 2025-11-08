@@ -32,7 +32,7 @@ def post_detail(request, year, month, day, post):
     # New structure with canonical urls
     post = get_object_or_404(
         Post,
-        slug=Post.Status.PUBLISHED,
+        status=Post.Status.PUBLISHED,
         slug=post,
         publish__year=year,
         publish__month=month,
