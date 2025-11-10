@@ -46,6 +46,9 @@ This is a blog application created with Django.
 
 ### Chapter 2
 
+69
+    - Class based views: Python classes that provide reusable, object-oriented alternatives to function-based views
+
 66
     - Handling pagination errors: preventing users from requesting invalid page numbers
 
