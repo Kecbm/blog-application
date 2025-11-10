@@ -46,6 +46,9 @@ This is a blog application created with Django.
 
 ### Chapter 2
 
+66
+    - Handling pagination errors: preventing users from requesting invalid page numbers
+
 62
     - Pagination: is the process of dividing a list of objects into a number of pages
     - Django have the Paginator class to implement pagination
