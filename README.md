@@ -46,6 +46,9 @@ This is a blog application created with Django.
 
 ### Chapter 2
 
+72
+    - Recommending posts by email: forms > view > url > template
+
 69
     - Class based-views: Python classes that provide reusable, object-oriented alternatives to function-based views
 
