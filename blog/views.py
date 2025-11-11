@@ -1,9 +1,10 @@
 from django.core.paginator import PageNotAnInteger, EmptyPage, Paginator
+from django.views.generic import ListView
 from django.shortcuts import get_object_or_404, render
 # from django.http import Http404
 from .models import Post
 
-# Create your views here.
+# Old function-based view
 def post_list(request):
     posts_list = Post.published.all()
 
@@ -57,3 +58,13 @@ def post_detail(request, year, month, day, post):
         'blog/post/detail.html',
         {'post': post}
     )
+
+class PostListView(ListView):
+    """
+    Alternative post list class-based view
+    """
+
+    queryset = Post.published.all()
+    context_object_name = 'posts'
+    paginate_by = 3
+    template_name = 'blog/post/list.html'
