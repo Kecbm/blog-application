@@ -46,6 +46,9 @@ This is a blog application created with Django.
 
 ### Chapter 2
 
+76
+    - Send emails with Django: need a SMTP server
+
 72
     - Recommending posts by email: forms > view > url > template
 
