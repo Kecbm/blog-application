@@ -132,5 +132,5 @@ EMAIL_PORT = 587
 EMAIL_USE_TLS = True
 DEFAULT_FROM_EMAIL = config('DEFAULT_FROM_EMAIL')
 
-# Para desenvolvimento - emails no console
-EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
+# For denvelopment - emails in the console
+# EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
