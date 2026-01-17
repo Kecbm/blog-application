@@ -3,7 +3,8 @@ from django.core.paginator import PageNotAnInteger, EmptyPage, Paginator
 from django.views.generic import ListView
 from django.shortcuts import get_object_or_404, render
 # from django.http import Http404
-from .forms import EmailPostForm
+from django.views.decorators.http import require_POST
+from .forms import CommentForm, EmailPostForm
 from .models import Post
 
 # Old function-based view
@@ -118,3 +119,30 @@ class PostListView(ListView):
     context_object_name = 'posts'
     paginate_by = 3
     template_name = 'blog/post/list.html'
+
+@require_POST
+def post_comment(request, post_id):
+    post = get_object_or_404(
+        Post,
+        id=post_id,
+        status=Post.Status.PUBLISHED
+    )
+    comment = None
+    # A comment was posted
+    form = CommentForm(data=request.POST)
+    if form.is_valid():
+        # Create a Comment object without saving it to the database
+        comment = form.save(commit=False)
+        # Assign the post to the comment
+        comment.post = post
+        # Save the comment to the database
+        comment.save()
+    return render(
+        request,
+        'blog/post/comment.html',
+        {
+            'post': post,
+            'form': form,
+            'comment': comment
+        }
+    )
