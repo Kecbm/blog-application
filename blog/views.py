@@ -6,10 +6,16 @@ from django.shortcuts import get_object_or_404, render
 from django.views.decorators.http import require_POST
 from .forms import CommentForm, EmailPostForm
 from .models import Post
+from taggit.models import Tag
 
 # Old function-based view
-def post_list(request):
+def post_list(request, tag_slug=None):
     posts_list = Post.published.all()
+    tag = None
+
+    if tag_slug:
+        tag = get_object_or_404(Tag, slug=tag_slug)
+        post_list = post_list.filter(tags__in=[tag])
 
     # Pagination with 3 post per page
     paginator = Paginator(posts_list, 3)
