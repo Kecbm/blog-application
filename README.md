@@ -43,6 +43,10 @@ This is a blog application created with Django.
 
 ## Annotations
 
+### Chapter 3
+
+107
+    - Implementing tagging with django-taggit
 
 ### Chapter 2
 
