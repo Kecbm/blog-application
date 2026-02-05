@@ -38,6 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'taggit',
     # Add the blog application
     # Now the application is available to the project
     'blog.apps.BlogConfig',
