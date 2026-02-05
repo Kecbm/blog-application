@@ -15,7 +15,7 @@ def post_list(request, tag_slug=None):
 
     if tag_slug:
         tag = get_object_or_404(Tag, slug=tag_slug)
-        post_list = post_list.filter(tags__in=[tag])
+        posts_list = posts_list.filter(tags__in=[tag])
 
     # Pagination with 3 post per page
     paginator = Paginator(posts_list, 3)
@@ -32,7 +32,7 @@ def post_list(request, tag_slug=None):
     return render(
         request,
         'blog/post/list.html',
-        {'posts': posts}
+        {'posts': posts, 'tag': tag}
     )
 
 def post_detail(request, year, month, day, post):
