@@ -45,6 +45,9 @@ This is a blog application created with Django.
 
 ### Chapter 3
 
+116
+    - Retrieving posts by similarity
+
 107
     - Implementing tagging with django-taggit
 
