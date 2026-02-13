@@ -45,6 +45,9 @@ This is a blog application created with Django.
 
 ### Chapter 3
 
+122
+    - Creating custom template tags and filters
+
 116
     - Retrieving posts by similarity
 
