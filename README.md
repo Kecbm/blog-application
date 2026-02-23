@@ -45,6 +45,9 @@ This is a blog application created with Django.
 
 ### Chapter 3
 
+134
+    - Adding a sitemap to the site
+
 122
     - Creating custom template tags and filters
 
