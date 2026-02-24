@@ -45,6 +45,9 @@ This is a blog application created with Django.
 
 ### Chapter 3
 
+139
+    - Creating feed for blog posts
+
 134
     - Adding a sitemap to the site
 
