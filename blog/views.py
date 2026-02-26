@@ -8,7 +8,8 @@ from django.views.decorators.http import require_POST
 from django.contrib.postgres.search import (
     SearchVector,
     SearchQuery,
-    SearchRank
+    SearchRank,
+    TrigramSimilarity
 )
 from .forms import CommentForm, EmailPostForm, SearchForm
 from .models import Post
@@ -196,13 +197,16 @@ def post_search(request):
             results = (
                 Post.published.annotate(
                     # search=SearchVector('title', 'body'),
-                    search=search_vector,
-                    rank=SearchRank(search_vector, search_query)
+                    # search=search_vector,
+                    # rank=SearchRank(search_vector, search_query)
+                    similarity=TrigramSimilarity('title', query)
                 )
                 # .filter(search=query)
                 # .filter(search=search_query)
-                .filter(rank__gte=0.3)
-                .order_by('-rank')
+                # .filter(rank__gte=0.3)
+                .filter(similarity__gt=0.1)
+                # .order_by('-rank')
+                .order_by('-similarity')
             )
 
     return render(
