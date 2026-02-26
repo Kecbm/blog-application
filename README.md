@@ -1,4 +1,4 @@
-<h1 id="top" align="center">Welcome to the Blog Application Repository</h1>
+<h1 id="top" align="center">📚 Welcome to the Blog Application Repository</h1>
 
 <h2>Summary:</h2>
 
@@ -13,11 +13,15 @@
 
 ---
 
-<h2 id="summary">What was developed</h2>
+<h2 id="summary">📝 What was developed</h2>
 
 <br>
 
 A complete **blog platform** built with **Django** and **PostgreSQL**, featuring advanced search capabilities, content management, and SEO optimization. This is a full-featured blog application with user authentication, post management, comments, tagging system, email notifications, RSS feeds, and intelligent search using trigram similarity.
+
+Watch a complete demonstration of the application in action:
+
+[📹 Watch the demo video.](assets/demo-blog-application.mp4)
 
 <br>
 
@@ -25,7 +29,7 @@ A complete **blog platform** built with **Django** and **PostgreSQL**, featuring
 
 ---
 
-<h2 id="tech">Technologies used</h2>
+<h2 id="tech">🛠️ Technologies used</h2>
 
 <br>
 
@@ -37,7 +41,7 @@ A complete **blog platform** built with **Django** and **PostgreSQL**, featuring
 
 ---
 
-<h2 id="execute">Execute the project</h2>
+<h2 id="execute">🚀 Execute the project</h2>
 
 <br>
 
@@ -115,7 +119,7 @@ Access the admin panel at **http://127.0.0.1:8000/admin/**
 
 ---
 
-<h2 id="features">Features</h2>
+<h2 id="features">✨ Features</h2>
 
 <br>
 
@@ -147,18 +151,18 @@ Access the admin panel at **http://127.0.0.1:8000/admin/**
 
 ---
 
-<h2 id="structure">Project structure</h2>
+<h2 id="structure">📁 Project structure</h2>
 
 <br>
 
 ```
 blog-application/
-├── blogapplication/          # Django project configuration
+├── blogapplication/         # Django project configuration
 │   ├── settings.py          # Project settings
 │   ├── urls.py              # Main URL routing
 │   ├── wsgi.py              # WSGI configuration
 │   └── asgi.py              # ASGI configuration
-├── blog/                     # Django application
+├── blog/                    # Django application
 │   ├── migrations/          # Database migrations
 │   ├── templates/           # HTML templates
 │   ├── static/              # CSS, JavaScript, images
@@ -172,7 +176,7 @@ blog-application/
 │   └── tests.py             # Unit tests
 ├── manage.py                # Django management script
 ├── requiriments.txt         # Python dependencies
-├── .env                      # Environment variables (not in repo)
+├── .env                     # Environment variables (not in repo)
 └── README.md                # This file
 ```
 
@@ -182,7 +186,7 @@ blog-application/
 
 ---
 
-<h2 id="doc">Documentation</h2>
+<h2 id="doc">📚 Documentation</h2>
 
 <br>
 
@@ -284,7 +288,7 @@ The `pg_trgm` extension is automatically installed via Django migration `0005_tr
 
 ---
 
-<h2 id="nextSteps">Next Steps</h2>
+<h2 id="nextSteps">🎯 Next Steps</h2>
 
 <br>
 
@@ -313,7 +317,7 @@ Future enhancements and features to be implemented:
 
 ---
 
-<h2 id="considerations">Final considerations</h2>
+<h2 id="considerations">💡 Final considerations</h2>
 
 <br>
 
