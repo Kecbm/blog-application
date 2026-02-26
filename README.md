@@ -21,7 +21,10 @@ A complete **blog platform** built with **Django** and **PostgreSQL**, featuring
 
 Watch a complete demonstration of the application in action:
 
-[📹 Watch the demo video.](assets/demo-blog-application.mp4)
+<video width="100%" controls>
+  <source src="assets/demo-blog-application.mp4" type="video/mp4">
+  📹 Your browser does not support the video tag.
+</video>
 
 <br>
 
