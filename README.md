@@ -21,7 +21,7 @@ A complete **blog platform** built with **Django** and **PostgreSQL**, featuring
 
 Watch a complete demonstration of the application in action:
 
-[📹 Watch the demo video.](assets/demo-blog-application.gif)
+![📹 Watch the demo video.](assets/demo-blog-application.gif)
 
 <br>
 
