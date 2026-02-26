@@ -7,8 +7,8 @@ from django.shortcuts import get_object_or_404, render
 from django.views.decorators.http import require_POST
 from django.contrib.postgres.search import (
     SearchVector,
-    SearchQuery,
-    SearchRank,
+    # SearchQuery,
+    # SearchRank,
     TrigramSimilarity
 )
 from .forms import CommentForm, EmailPostForm, SearchForm
@@ -193,7 +193,7 @@ def post_search(request):
             search_vector = SearchVector(
                 'title', weight='A'
             ) + SearchVector('body', weight='B')
-            search_query = SearchQuery(query, config='english')
+            # search_query = SearchQuery(query, config='english')
             results = (
                 Post.published.annotate(
                     # search=SearchVector('title', 'body'),
